@@ -1,0 +1,4 @@
+1 - create new github repo with:
+The code of app.py 
+Dockerfile (From Python)
+2- build and upload your image to docker hub

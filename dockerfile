@@ -1,6 +1,5 @@
-FROM frolvlad/alpine-oraclejdk8:slim 
-WORKDIR /data
-COPY ./spring-music.jar /data
-
-EXPOSE 8080:8080
-CMD java -jar -Dspring.profiles.active /data/spring-music.jar
+FROM ubuntu:latest
+COPY . /app
+RUN make /app
+EXPOSE 8080:5001
+CMD python3 /app/app.py
